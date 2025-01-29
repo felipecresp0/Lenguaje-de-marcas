@@ -1,0 +1,433 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+/* Header */
+/* Ajuste del header */
+/* Ajuste del header */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #141414;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    gap: 15px; /* Espacio entre elementos */
+}
+
+/* Estilo del menú hamburguesa */
+#menuToggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilo del buscador */
+#searchInput {
+    flex-grow: 1; /* Para que se ajuste sin desplazar PipeFlix */
+    max-width: 250px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px; /* Bordes redondeados */
+    outline: none;
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Efecto al hacer focus en el buscador */
+#searchInput:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Placeholder con color más visible */
+#searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Estilo del logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Ajusta el tamaño del logo */
+    width: auto;
+    max-width: 150px; /* Asegura que no sea demasiado grande */
+}
+
+
+
+/* Contenedor del buscador */
+.search-container {
+    display: flex;
+    flex-grow: 1; /* Permite que el buscador se ajuste correctamente */
+    justify-content: flex-start; /* Mantiene el logo donde estaba */
+    max-width: 400px;
+}
+
+/* Estilo del buscador */
+#searchInput {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px; /* Bordes redondeados */
+    outline: none;
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Efecto al hacer focus en el buscador */
+#searchInput:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Placeholder con color más visible */
+#searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#menuToggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* Movies Grid */
+/* Ajustamos la cuadrícula para evitar solapamientos */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: start; /* Asegura que todas las tarjetas comiencen desde el mismo nivel */
+}
+
+/* Aseguramos que todas las tarjetas tengan la misma altura */
+.movie-card {
+    position: relative;
+    width: 220px;
+    height: 330px; /* Tamaño fijo para todas */
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Asegura que todo quede bien alineado */
+}
+
+/* Al hacer hover, se agranda sin desbordar la cuadrícula */
+.movie-card:hover {
+    transform: scale(1.05);
+    z-index: 10; /* Asegura que no se solapen */
+}
+
+/* Ajustamos la imagen para que todas sean iguales sin deformarse */
+.movie-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta la imagen manteniendo la proporción */
+    border-radius: 10px;
+}
+
+/* Evitar que las imágenes más largas o más cortas descoloquen la cuadrícula */
+.movie-card img {
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay que aparece cuando pasas el ratón */
+.movie-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Mostrar overlay solo al hacer hover */
+.movie-card:hover .movie-overlay {
+    opacity: 1;
+}
+
+/* Ajuste del título */
+.movie-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* Botones dentro del overlay */
+.movie-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.play-button, .favorite-button {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo de los botones */
+.play-button {
+    background-color: #e50914;
+    color: white;
+}
+
+.play-button:hover {
+    background-color: #b20710;
+}
+
+.favorite-button {
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+.favorite-button.active {
+    color: #e50914;
+}
+
+
+
+
+/* Sidebar oculto completamente */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Lo mueve fuera de la pantalla */
+    width: 250px;
+    height: 100%;
+    background-color: #141414;
+    color: #fff;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%); /* Lo oculta completamente */
+    z-index: 999;
+    padding: 20px;
+}
+
+/* Sidebar cuando está activo */
+/* Estilo del Sidebar con transparencia */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.8); /* Fondo negro translúcido */
+    color: #fff;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+    z-index: 1000;
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); /* Sombra para más profundidad */
+}
+
+/* Mostrar Sidebar cuando está activo */
+.sidebar.active {
+    transform: translateX(0);
+    left: 0;
+}
+
+/* Estilo de los elementos del menú */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Efecto al pasar el mouse sobre una categoría */
+.sidebar ul li:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo de la categoría activa */
+.sidebar ul li.active {
+    background: rgba(255, 0, 0, 0.5); /* Color rojo translúcido para destacar */
+    color: white;
+}
+
+#loadMore {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#loadMore:hover {
+    background-color: #b20710;
+}
+/* Estilo del botón "Volver arriba" */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.8); /* Rojo translúcido */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%; /* Hace que sea circular */
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+/* Mostrar el botón cuando es necesario */
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Efecto hover */
+#backToTop:hover {
+    background-color: rgba(255, 0, 0, 1); /* Rojo sólido al pasar el cursor */
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.4);
+    transform: scale(1.1);
+}
+
+/* Animación al hacer clic */
+#backToTop:active {
+    transform: scale(0.9);
+}
+/* Estilo del mensaje de "Añadido a favoritos" */
+#favoriteMessage {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 0, 0, 0.9);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: none;
+    z-index: 1000;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Efecto de aparición */
+#favoriteMessage.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Desaparece lentamente */
+#favoriteMessage.fade-out {
+    opacity: 0;
+}
+/* MODAL PARA TRÁILER */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor del tráiler */
+.modal-content {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    background: black;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Botón para cerrar el modal */
+#closeTrailer {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Ajuste del iframe */
+#trailerFrame {
+    width: 100%;
+    height: 450px;
+    border-radius: 5px;
+}
+
+
+
+

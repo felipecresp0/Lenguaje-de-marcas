@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PipeFlix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <button id="menuToggle">☰</button>
+        <!-- LOGO COMO IMAGEN -->
+        <a href="#" class="logo">
+            <img src="'Pipeflix'..png" alt="PipeFlix Logo">
+        </a>
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Buscar películas..." />
+            <select id="genreFilter" class="hidden">
+                <option value="">Todos los géneros</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Menú lateral -->
+    <aside id="sidebar" class="sidebar">
+        <h2>Categorías</h2>
+        <ul id="categoryList">
+            <!-- Las categorías se generarán dinámicamente -->
+        </ul>
+    </aside>
+
+    <main>
+        <section class="movies-grid" id="movies"></section>
+        <p id="noResults" class="hidden">No se encontraron películas.</p>
+        <button id="loadMore" class="hidden">Ver más</button>
+    </main>
+
+    <!-- Modal -->
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalYear"></p>
+            <p id="modalGenre"></p>
+            <p id="modalSynopsis"></p>
+        </div>
+    </div>
+    <div id="favoriteMessage"></div>
+    
+    <!-- Modal para reproducir el tráiler -->
+    <div id="trailerModal" class="modal">
+        <div class="modal-content">
+            <span id="closeTrailer">&times;</span>
+            <iframe id="trailerFrame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Botón "Volver arriba" -->
+    <button id="backToTop" title="Volver arriba">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

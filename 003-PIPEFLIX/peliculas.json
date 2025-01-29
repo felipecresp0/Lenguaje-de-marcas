@@ -1,0 +1,39 @@
+[
+  {"titulo": "El Rey León", "año": 1994, "genero": "Animación", "poster": "https://pics.filmaffinity.com/El_rey_leaon-236872519-large.jpg", "trailer": "https://www.youtube.com/embed/bjJvvrKl83M?autoplay=1"},
+  {"titulo": "Toy Story", "año": 1995, "genero": "Animación", "poster": "https://m.media-amazon.com/images/M/MV5BZTA3OWVjOWItNjE1NS00NzZiLWE1MjgtZDZhMWI1ZTlkNzYwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", "trailer": "https://www.youtube.com/embed/VhCDgv4x_pU?si=pAszJo7LZqpvjEUx?autoplay=1"},
+  {"titulo": "Shrek", "año": 2001, "genero": "Animación", "poster": "https://play-lh.googleusercontent.com/SU1hRumo0t-zFebkVVlesNb6a1mHYPxxQJX-49jYayrMIrsmU135uxgcOglMcCB_kHfb=w240-h480-rw", "trailer": "https://www.youtube.com/embed/CwXOrWvPBPk?autoplay=1"},
+  {"titulo": "Up", "año": 2009, "genero": "Animación", "poster": "https://pics.filmaffinity.com/Up-672315222-large.jpg", "trailer": "https://www.youtube.com/embed/qas5lWp7_R0?autoplay=1"},
+  
+  {"titulo": "Titanic", "año": 1997, "genero": "Romántica", "poster": "https://preview.redd.it/es9pbmd98s6b1.jpg?auto=webp&s=d7c0098cb0d3c5cbe6b574823701ea71237e737e", "trailer": "https://www.youtube.com/embed/tA_qMdzvCvk?autoplay=1"},
+  {"titulo": "Diario de Noa", "año": 2004, "genero": "Romántica", "poster": "https://pics.filmaffinity.com/El_diario_de_Noah-242272771-large.jpg", "trailer": "https://www.youtube.com/embed/FC6biTjEyZw?autoplay=1"},
+  {"titulo": "Ghost: La Sombra del Amor", "año": 1990, "genero": "Romántica", "poster": "https://pics.filmaffinity.com/Ghost_Maas_allaa_del_amor-837545829-large.jpg", "trailer": "https://www.youtube.com/embed/8uubih798tg?si=j1rcd7tD6-XaQx3X?autoplay=1"},
+  {"titulo": "La La Land", "año": 2016, "genero": "Romántica", "poster": "https://pics.filmaffinity.com/La_ciudad_de_las_estrellas_La_La_Land-262021831-large.jpg", "trailer": "https://www.youtube.com/embed/0pdqf4P9MB8?autoplay=1"},
+
+  {"titulo": "Cadena Perpetua", "año": 1994, "genero": "Drama", "poster": "https://m.media-amazon.com/images/I/71KKnwXlYhL._AC_UF1000,1000_QL80_.jpg", "trailer": "https://www.youtube.com/embed/PLl99DlL6b4?si=c4cJkNNh1LxMDLYr?autoplay=1"},
+  {"titulo": "Forrest Gump", "año": 1994, "genero": "Drama", "poster": "https://pics.filmaffinity.com/Forrest_Gump-212765827-large.jpg", "trailer": "https://www.youtube.com/embed/bLvqoHBptjg?autoplay=1"},
+  {"titulo": "El Indomable Will Hunting", "año": 1997, "genero": "Drama", "poster": "https://pics.filmaffinity.com/El_indomable_Will_Hunting-764690099-large.jpg", "trailer": "https://www.youtube.com/embed/PaZVjZEFkRs?si=F6NrtwgZ_EV9jrAg?autoplay=1"},
+
+  {"titulo": "Parque Jurásico", "año": 1993, "genero": "Aventura", "poster": "https://pics.filmaffinity.com/Parque_Juraasico_Jurassic_Park-214895994-large.jpg", "trailer": "https://www.youtube.com/embed/RtBuQmT6bb4?si=ap5mxgc2JlfeJt6p?autoplay=1"},
+  {"titulo": "Indiana Jones y el Arca Perdida", "año": 1981, "genero": "Aventura", "poster": "https://pics.filmaffinity.com/En_busca_del_arca_perdida-316486950-large.jpg", "trailer": "https://www.youtube.com/embed/XkkzKHCx154?autoplay=1"},
+  {"titulo": "Piratas del Caribe: La Maldición del Perla Negra", "año": 2003, "genero": "Aventura", "poster": "https://pics.filmaffinity.com/Piratas_del_Caribe_La_maldiciaon_de_la_Perla_Negra-627724446-large.jpg", "trailer": "https://www.youtube.com/embed/naQr0uTrH_s?autoplay=1"},
+  {"titulo": "El Hobbit: Un Viaje Inesperado", "año": 2012, "genero": "Aventura", "poster": "https://pics.filmaffinity.com/El_Hobbit_Un_viaje_inesperado-249234415-large.jpg", "trailer": "https://www.youtube.com/embed/SDnYMbYB-nU?autoplay=1"},
+
+  {"titulo": "El Padrino", "año": 1972, "genero": "Crimen", "poster": "https://pics.filmaffinity.com/El_padrino-993414333-large.jpg", "trailer": "https://www.youtube.com/embed/iOyQx7MXaz0?autoplay=1"},
+  {"titulo": "Pulp Fiction", "año": 1994, "genero": "Crimen", "poster": "https://pics.filmaffinity.com/Pulp_Fiction-210382116-large.jpg", "trailer": "https://www.youtube.com/embed/tGpTpVyI_OQ?autoplay=1"},
+  {"titulo": "El Irlandés", "año": 2019, "genero": "Crimen", "poster": "https://es.web.img3.acsta.net/pictures/19/09/16/18/04/3205974.jpg", "trailer": "https://www.youtube.com/embed/WHXxVmeGQUc?autoplay=1"},
+
+  {"titulo": "El Silencio de los Corderos", "año": 1991, "genero": "Suspenso", "poster": "https://pics.filmaffinity.com/El_silencio_de_los_corderos-767447992-large.jpg", "trailer": "https://www.youtube.com/embed/6iB21hsprAQ?si=LtUSfCwoKGdC31rd?autoplay=1"},
+  {"titulo": "Seven", "año": 1995, "genero": "Suspenso", "poster": "https://m.media-amazon.com/images/I/71ShGTVJy4L._AC_UF894,1000_QL80_.jpg", "trailer": "https://www.youtube.com/embed/znmZoVkCjpI?autoplay=1"},
+  {"titulo": "Origen", "año": 2010, "genero": "Suspenso", "poster": "https://pics.filmaffinity.com/Origen-109425434-large.jpg", "trailer": "https://www.youtube.com/embed/YoHD9XEInc0?autoplay=1"},
+  {"titulo": "Zodiac", "año": 2007, "genero": "Suspenso", "poster": "https://www.aceprensa.com/wp-content/uploads/2007/05/1949-0.jpg", "trailer": "https://www.youtube.com/embed/yNncHPl1UXg?autoplay=1"},
+
+  {"titulo": "El Señor de los Anillos: La Comunidad del Anillo", "año": 2001, "genero": "Fantasía", "poster": "https://pics.filmaffinity.com/El_seanor_de_los_anillos_La_comunidad_del_anillo-744631610-large.jpg", "trailer": "https://www.youtube.com/embed/iFOucwxKRFE?autoplay=1"},
+  {"titulo": "Harry Potter y la Piedra Filosofal", "año": 2001, "genero": "Fantasía", "poster": "https://pics.filmaffinity.com/Harry_Potter_y_la_piedra_filosofal-154820574-large.jpg", "trailer": "https://www.youtube.com/embed/VyHV0BRtdxo?autoplay=1"},
+
+  {"titulo": "Matrix", "año": 1999, "genero": "Ciencia Ficción", "poster": "https://pics.filmaffinity.com/Matrix-155050517-large.jpg", "trailer": "https://www.youtube.com/embed/vKQi3bBA1y8?autoplay=1"},
+  {"titulo": "Star Wars: Episodio IV - Una Nueva Esperanza", "año": 1977, "genero": "Ciencia Ficción", "poster": "https://m.media-amazon.com/images/I/71OnL9mzN4L._AC_UF894,1000_QL80_.jpg", "trailer": "https://www.youtube.com/embed/beAH5vea99k?autoplay=1"},
+  {"titulo": "Interstellar", "año": 2014, "genero": "Ciencia Ficción", "poster": "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", "trailer": "https://www.youtube.com/embed/UoSSbmD9vqc?autoplay=1"},
+  {"titulo": "Regreso al Futuro", "año": 1985, "genero": "Ciencia Ficción", "poster": "https://pics.filmaffinity.com/Regreso_al_futuro-139415628-large.jpg", "trailer": "https://www.youtube.com/embed/qvsgGtivCgs?autoplay=1"},
+  {"titulo": "Avengers: Endgame", "año": 2019, "genero": "Acción", "poster": "https://pics.filmaffinity.com/Vengadores_Endgame-135478227-large.jpg", "trailer": "https://www.youtube.com/embed/svLSGZkTzC0?autoplay=1"},
+  {"titulo": "Gladiator", "año": 2000, "genero": "Acción", "poster": "https://pics.filmaffinity.com/Gladiator-368149580-large.jpg", "trailer": "https://www.youtube.com/embed/P5ieIbInFpg?si=_Zhy-dkzOv0BosQW?autoplay=1"}
+]
